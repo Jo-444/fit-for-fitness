@@ -1,0 +1,308 @@
+
+/* Name: Jordan Sindelar*/
+
+.root {
+    --primary-color: #f8f9fa;
+    --secondary-color: #00b894;
+    --thrid-color: #333;
+}
+
+
+
+
+.link {
+
+    color: #00b894; /* this will chnage the color of the text to a more blue color*/
+    font-weight: bold; /* this makes the text bold*/
+    text-decoration: none; /* this makes sure there is nothing fancy added to the text*/
+
+}
+
+
+
+.link:hover {
+
+  text-decoration: underline; /* this makes the text underline when you hover over it*/
+  color: #019870; 
+
+}
+
+
+
+body {
+
+  font-family: "Cormorant Garamond", serif;
+
+  line-height: 1.6;
+
+  background: #f8f9fa; /* this changes the background color to an off white*/
+
+  color: #333; /* this makes the body text a black color*/
+
+}
+
+
+
+.container {
+
+  width: 90%; /* this makes the width of the container 90 percent*/
+
+  max-width: 1100px; /* this makes the max- width 1100px*/
+
+  margin: 0 auto; /* this makes the margin auto*/
+
+}
+
+
+
+header {
+
+  background: #111; /* makes the background black*/
+
+  color: #fff; /* text color white*/
+
+  padding: 15px 0; /* this adds padding the the header */
+
+font-family: "Cormorant Garamond", serif;
+
+}
+
+
+
+header .container{
+
+  display: flex; /* this makes the content a flexbox*/
+
+  justify-content: space-between; /* this changes the flexbox so there is space between*/
+
+
+}
+
+
+header h1 {
+
+  font-size: 28.8px; /* this makes the font size 28.8px*/
+  font-family: "Cormorant Garamond", serif;
+
+}
+
+
+
+nav ul {
+
+  list-style: none; /* this makes it so the list has no style*/
+  display: flex; /* this makes it a flexbox*/
+  flex-wrap: wrap; /* this makes it so the content wraps*/
+  gap: 20px; /* this add a 20% gap*/
+
+}
+
+
+
+nav a {
+
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Cormorant Garamond", serif;
+
+}
+
+
+
+
+nav a:hover {
+
+  color: #00b894; /* this makes the hover color green*/
+
+}
+
+
+
+
+
+.hero {
+
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+  font-family: "Cormorant Garamond", serif;
+
+}
+
+
+
+.hero-content {
+  max-width: 700px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 10px; /* this makes the border 10px*/
+
+}
+
+
+
+.hero h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-family: "Cormorant Garamond", serif;
+
+}
+
+
+
+.hero p {
+
+  margin-bottom: 20px; /* this add a 20px margin to the bottom*/
+
+}
+
+
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+
+}
+
+
+
+.feature {
+  background: white;
+  min-width: 250px; /* this makes the minimum width 250px*/
+  margin: 10px;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+
+}
+
+
+
+.feature h3 {
+  color: #00b894;
+  margin-bottom: 10px;
+
+}
+
+
+
+
+
+.programs {
+  text-align: center;
+  padding: 60px 20px;
+
+}
+
+
+
+.program-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+
+}
+
+
+
+.program-card {
+  background: white;
+  width: 300px;
+  padding: 25px;
+  border-left: 5px solid #00b894;
+  border-radius: 5px;
+  text-align: left; /* this makes the text align to the left*/
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+}
+
+
+
+
+footer {
+  text-align: center;
+  background: #111;
+  color: white;
+  padding: 20px 0;
+  margin-top: 40px;
+
+}
+
+
+@media (max-width: 900px) {
+
+  .hero h2 {
+
+    font-size: 32px;
+
+  }
+
+
+
+  .features {
+    flex-direction: column; /* this turns the flex direction into a column*/
+    align-items: center; /* this centers the content*/
+
+  }
+
+
+
+  header .container {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+  nav ul {
+
+    flex-direction: column;
+    gap: 10px;
+
+  }
+
+
+
+  .hero {
+    padding: 80px 20px;
+
+  }
+
+
+
+  .hero h2 {
+    font-size: 28.8px;
+
+  }
+
+
+
+
+  .feature {
+
+    width: 90%;
+
+  }
+
+
+
+  .program-card {
+
+    width: 90%;
+
+  }
+
+}
